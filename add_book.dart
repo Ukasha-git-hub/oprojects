@@ -74,9 +74,9 @@ class LibraryManagement {
   Member member;
   LibraryManagement(this.book, this.member);
   void listBooks() {
-    for (var Book in Books) {
+    for (var book in Books) {
       print(
-        "Book title: ${Book.title}, Publish Year: ${Book.publishyear ?? 'Unknown'}",
+        "Book title: ${book.title}, Publish Year: ${book.publishyear ?? 'Unknown'}",
       );
     }
   }
