@@ -4,6 +4,9 @@ void main() {
   area.calculateRectangleArea();
   area.calculateAreaOfTriangle();
   area.calculateAreaOfsquare(6, 4);
+  area.areaOFCircle(5, 4);
+  
+
 }
 
 class Area {
@@ -23,7 +26,7 @@ class Area {
       //   width = 3;
 
       // }
-      double areaOfRectangle = height ?? 0 * (width ?? 0);
+      double areaOfRectangle = theight ?? 0 * (width ?? 0);
       // double AreaOfRectangle = height! * width!;
       print("area :" + areaOfRectangle.toString());
     } catch (e) {
@@ -46,5 +49,15 @@ class Area {
   void calculateAreaOfsquare(double height, double width) {
     double areaOfSquare = height * width;
     print(areaOfSquare);
+  }
+
+  void areaOFCircle(double radius, double diameter) {
+    try {
+      double areaOfcircle = radius * 2 + diameter;
+   
+      print(areaOfcircle);
+    } catch (e) {
+      print(e);
+    }
   }
 }
